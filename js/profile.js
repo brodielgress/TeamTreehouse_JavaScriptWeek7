@@ -40,7 +40,6 @@ function get(username) {
                 const message = `There was an error getting the profile for ${username} (${http.STATUS_CODES[response.statusCode]})`;
                 const statusCodeError = new Error(message);
                 printError(statusCodeError);
-
             }
         });
 
